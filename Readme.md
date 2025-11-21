@@ -60,10 +60,10 @@ any lightweight dev server
 Note: This file is CORS-safe, so it should work even without a server.
 
 🎮 Controls
-Action Result
-Mouse Move Rotates the core artifact
-Initialize Sequence Camera zoom + color transformation
-Window Resize Canvas auto-resizes to fit viewport
+Action	Result
+Mouse Move	Rotates the core artifact
+Initialize Sequence	Camera zoom + color transformation
+Window Resize	Canvas auto-resizes to fit viewport
 🔧 Customization
 
 All interactive parameters are inside the <script> section of index.html.
@@ -83,7 +83,8 @@ This makes the project easy to fork and restyle.
 
 📂 Project Structure
 /ThreeJS
-└── index.html # Single-file project (HTML + CSS + JS)
+ └── index.html   # Single-file project (HTML + CSS + JS)
+
 
 Everything — scene setup, shaders, controls, UI — is packed inside one file.
 
