@@ -1,60 +1,93 @@
 Neo-Geometry | 3D Cyberpunk Experience
 
-A futuristic, interactive 3D landing page built with Three.js and Tailwind CSS. This project features a procedurally generated "Data Core" artifact, reactive lighting, and glitch UI effects, all contained within a single HTML file for easy deployment.
+A futuristic, interactive 3D landing page built entirely with Three.js and Tailwind CSS — featuring a procedurally generated “Data Core,” reactive lighting, and glitch-style UI animations. Everything runs inside a single HTML file, with zero build tools required.
 
 🚀 Features
+⚙️ Procedural 3D Assets
 
-Procedural 3D Assets: No external .gltf or .obj files required. The central core, debris rings, and particle systems are generated mathematically at runtime.
+No external .gltf / .obj models.
 
-Interactive Camera & Controls: \* The core rotates based on mouse position.
+Core artifact, debris rings, and particles are generated mathematically at runtime.
 
-"Initialize Sequence" button triggers a smooth camera zoom and color shift animation.
+🖱 Interactive Controls
 
-Reactive Lighting: Dynamic point lights orbit the center to create depth and shadow.
+Central “Data Core” rotates based on mouse movement.
 
-Cyberpunk UI: Custom CSS animations for glitch text effects and glassmorphism panels.
+“Initialize Sequence” button triggers a smooth camera-zoom and color-shift animation.
 
-Zero Build Step: Runs directly in the browser using CDNs.
+💡 Reactive Lighting
 
-🛠️ Technologies Used
+Orbiting point lights create dynamic shadows and depth.
 
-Three.js (r128): For WebGL rendering and 3D scene management.
+💻 Cyberpunk UI Effects
 
-Tailwind CSS: For rapid, utility-first UI styling.
+Custom glitch-text animations.
 
-HTML5 & CSS3: Core structure and glitch animations.
+Glassmorphism panels built with Tailwind CSS.
 
-📦 Installation & Usage
+📦 Zero Build Step
 
-Since this project uses CDNs for libraries, there is no complex build process (npm/webpack/vite) required.
+Runs directly in-browser using public CDNs.
 
-Clone the repository:
+No npm, webpack, or bundlers.
+
+🛠️ Tech Stack
+
+Three.js (r128) — WebGL rendering & 3D scene management
+
+Tailwind CSS — Utility-first UI design
+
+HTML5 + CSS3 — Structure, animations, and layout
+
+📥 Installation & Usage
+
+This project has no build pipeline. Just clone and open.
 
 git clone https://github.com/ramanrishit448-RR/ThreeJS.git
 
-Open the file:
-Simply double-click index.html to open it in your default web browser.
+Run the project
 
-Note: For the best development experience, it is recommended to use a local server (like Live Server in VS Code) to avoid any potential cross-origin restrictions, though this specific file should work locally as-is.
+Open index.html directly in your browser OR
+
+Use a local server (recommended for a smoother experience):
+
+VS Code Live Server
+
+python3 http.server
+
+any lightweight dev server
+
+Note: This file is CORS-safe, so it should work even without a server.
 
 🎮 Controls
+Action Result
+Mouse Move Rotates the core artifact
+Initialize Sequence Camera zoom + color transformation
+Window Resize Canvas auto-resizes to fit viewport
+🔧 Customization
 
-Mouse Move: Rotate the central artifact.
+All interactive parameters are inside the <script> section of index.html.
 
-Click "Initialize Sequence": Trigger the "Exploration Mode" (Camera zoom-in & color shift).
+particleCount — Number of background stars
+Default: 2000
 
-Resize Window: The 3D canvas automatically adjusts to the new viewport size.
+isExploding Sequence — Modify color transitions on interaction
 
-🔮 Customization
+Geometry Tweaks — Adjust TorusGeometry, IcosahedronGeometry, or any procedural shape
 
-You can tweak the 3D parameters in the <script> tag at the bottom of index.html:
+Lighting — Change speed, intensity, or orbit radius of point lights
 
-particleCount: Change the number of background stars (Default: 2000).
+UI FX — Tweak glitch animation duration and CSS filters
 
-isExploding logic: Change the colors triggered during the interaction sequence.
+This makes the project easy to fork and restyle.
 
-Geometry: Modify TorusGeometry or IcosahedronGeometry parameters to change the shape of the core.
+📂 Project Structure
+/ThreeJS
+└── index.html # Single-file project (HTML + CSS + JS)
 
-📄 License
+Everything — scene setup, shaders, controls, UI — is packed inside one file.
 
-This project is open source and available under the MIT License.
+📝 License
+
+This project is open-source under the MIT License.
+You’re free to modify, distribute, or use it in your own work.
