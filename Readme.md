@@ -2,8 +2,6 @@ Neo-Geometry | 3D Cyberpunk Experience
 
 A futuristic, interactive 3D landing page built with Three.js and Tailwind CSS. This project features a procedurally generated "Data Core" artifact, reactive lighting, and glitch UI effects, all contained within a single HTML file for easy deployment.
 
-<!-- Replace the link above with an actual screenshot of your project -->
-
 🚀 Features
 
 Procedural 3D Assets: No external .gltf or .obj files required. The central core, debris rings, and particle systems are generated mathematically at runtime.
@@ -32,7 +30,7 @@ Since this project uses CDNs for libraries, there is no complex build process (n
 
 Clone the repository:
 
-git clone [https://github.com/yourusername/neo-geometry.git](https://github.com/yourusername/neo-geometry.git)
+git clone https://github.com/ramanrishit448-RR/ThreeJS.git
 
 Open the file:
 Simply double-click index.html to open it in your default web browser.
