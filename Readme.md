@@ -1,93 +1,61 @@
-Neo-Geometry | 3D Cyberpunk Experience
+# Neo-Geometry | 3D Cyberpunk Experience
 
-A futuristic, interactive 3D landing page built entirely with Three.js and Tailwind CSS — featuring a procedurally generated “Data Core,” reactive lighting, and glitch-style UI animations. Everything runs inside a single HTML file, with zero build tools required.
+## 🧬 Badges
 
-🚀 Features
-⚙️ Procedural 3D Assets
+<p align="left">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg">
+  <img src="https://img.shields.io/badge/tech-Three.js%20%7C%20TailwindCSS%20%7C%20HTML5-orange.svg">
+  <img src="https://img.shields.io/badge/status-active-brightgreen.svg">
+</p>
 
-No external .gltf / .obj models.
+---
 
-Core artifact, debris rings, and particles are generated mathematically at runtime.
+## 🔮 Overview
 
-🖱 Interactive Controls
+**Neo-Geometry** is an interactive 3D cyberpunk landing page built using **Three.js** and **Tailwind CSS**.  
+It features a fully procedural “Data Core,” reactive lighting, glitch UI effects, and smooth interaction animations — all inside a **single HTML file** with zero build tools.
 
-Central “Data Core” rotates based on mouse movement.
+---
 
-“Initialize Sequence” button triggers a smooth camera-zoom and color-shift animation.
+## 🚀 Features
 
-💡 Reactive Lighting
+### ⚙️ Procedural Geometry
+- Runtime-generated Data Core, rings, and particle systems  
+- No external 3D model files (.gltf / .obj)
 
-Orbiting point lights create dynamic shadows and depth.
+### 🖱 Interactive Experience
+- Mouse movement rotates the core  
+- “Initialize Sequence” triggers camera zoom + color shift
 
-💻 Cyberpunk UI Effects
+### 💡 Dynamic Lighting
+- Orbiting point lights for depth and atmosphere
 
-Custom glitch-text animations.
+### 🧵 Cyberpunk UI / FX
+- Glitch text animations  
+- Glassmorphism panels  
+- Tailwind utility styling
 
-Glassmorphism panels built with Tailwind CSS.
+### 📦 Zero Build Setup
+- Runs directly in the browser via CDNs  
+- No npm, webpack, or bundlers required
 
-📦 Zero Build Step
+---
 
-Runs directly in-browser using public CDNs.
+## 🛠️ Tech Stack
 
-No npm, webpack, or bundlers.
+| Layer        | Technology |
+|-------       |------------|
+| 3D Rendering | Three.js (r128) |
+| UI Styling   | Tailwind CSS |
+| Structure    | HTML5 + CSS3 |
+| FX & Animations | Custom CSS + JS |
 
-🛠️ Tech Stack
+---
 
-Three.js (r128) — WebGL rendering & 3D scene management
+## 📥 Installation & Usage
 
-Tailwind CSS — Utility-first UI design
+Clone the repository:
 
-HTML5 + CSS3 — Structure, animations, and layout
-
-📥 Installation & Usage
-
-This project has no build pipeline. Just clone and open.
-
+```bash
 git clone https://github.com/ramanrishit448-RR/ThreeJS.git
-
-Run the project
-
-Open index.html directly in your browser OR
-
-Use a local server (recommended for a smoother experience):
-
-VS Code Live Server
-
-python3 http.server
-
-any lightweight dev server
-
-Note: This file is CORS-safe, so it should work even without a server.
-
-🎮 Controls
-Action Result
-Mouse Move Rotates the core artifact
-Initialize Sequence Camera zoom + color transformation
-Window Resize Canvas auto-resizes to fit viewport
-🔧 Customization
-
-All interactive parameters are inside the <script> section of index.html.
-
-particleCount — Number of background stars
-Default: 2000
-
-isExploding Sequence — Modify color transitions on interaction
-
-Geometry Tweaks — Adjust TorusGeometry, IcosahedronGeometry, or any procedural shape
-
-Lighting — Change speed, intensity, or orbit radius of point lights
-
-UI FX — Tweak glitch animation duration and CSS filters
-
-This makes the project easy to fork and restyle.
-
-📂 Project Structure
-/ThreeJS
-└── index.html # Single-file project (HTML + CSS + JS)
-
-Everything — scene setup, shaders, controls, UI — is packed inside one file.
-
-📝 License
-
-This project is open-source under the MIT License.
-You’re free to modify, distribute, or use it in your own work.
